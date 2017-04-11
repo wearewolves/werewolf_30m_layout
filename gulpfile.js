@@ -5,7 +5,6 @@ var minimist = require('minimist');
 var args = minimist(process.argv.slice(2));
 gulp.task('deploy', function() {
   var remotePath = '/www/';
-  console.log("deploy " + args.branch+" "+args.tag)
   var conn = ftp.create({
     host: 'werewolf6.cafe24.com',
     user: args.user,
