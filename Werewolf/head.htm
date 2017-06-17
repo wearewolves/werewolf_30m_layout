@@ -12,8 +12,7 @@
 
 BODY,TD,input,div,form,TEXTAREA,center,option,pre,blockquote {font-size:9pt; color:#666666; font-family:±¼¸²;}
 TD {line-height:140%}
-body 
-{
+body {
 	background-color:#000000;
 	/* no more support for scrollbar style
 	scrollbar-face-color:#000000;
@@ -51,6 +50,7 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 	float:right;
 	width:645px;
 }
+
 #submenu {
 	border:1px solid #151515;
 	margin:30px 0px;
@@ -61,7 +61,7 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 
 .outter {
 	list-style-type:none;
-	margin:0px 0px ;
+	margin:0px 0px;
 	color:#A30;
 	font-size:12px;
 	font-weight:bold;
@@ -85,7 +85,7 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 	margin:0px 0px 0px 0px;
 	padding:10px 0px 0px 0px;
 	border:solid 1px #111111;
-	overflow:auto;
+	overflow:hidden;
 }
 
 /* notification message style */
@@ -140,10 +140,11 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
     background-color:#FFBABA;
 }
 </style>
+
 <style type="text/css" media='print'>
-#header{display:none;}
-#sidebar{display:none;}
-#content{font-size:5pt;}
+#header {display:none;}
+#sidebar {display:none;}
+#content {font-size:5pt;}
 </style>
 
 <div id="container" >
@@ -162,7 +163,7 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 						while($temp = mysql_fetch_array($entry)) {
 							$game = mysql_fetch_array(mysql_query("select * from `zetyx_board_$id` where no = ".$temp['game']));
 							
-							echo "<br><br><a href='view.php?id=$id&no=".$game['no']."'>".$game['subject']."</a>";
+							echo "<br><br><a href='".$currentHost."/bbs/view.php?id=werewolf&no=".$game['no']."'>".$game['subject']."</a>";
 						}
 					?>
 				</div>

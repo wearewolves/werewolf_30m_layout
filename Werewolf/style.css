@@ -3,8 +3,7 @@
 
 BODY,TD,input,div,form,TEXTAREA,center,option,pre,blockquote {font-size:9pt; color:#666666; font-family:±¼¸²;}
 TD {line-height:140%}
-body 
-{
+body {
 	background-color:#000000;
 	/* no more support for scrollbar style
 	scrollbar-face-color:#000000;
@@ -42,6 +41,7 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 	float:right;
 	width:645px;
 }
+
 #submenu {
 	border:1px solid #151515;
 	margin:30px 0px;
@@ -52,7 +52,7 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 
 .outter {
 	list-style-type:none;
-	margin:0px 0px ;
+	margin:0px 0px;
 	color:#A30;
 	font-size:12px;
 	font-weight:bold;
@@ -76,7 +76,7 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 	margin:0px 0px 0px 0px;
 	padding:10px 0px 0px 0px;
 	border:solid 1px #111111;
-	overflow:auto;
+	overflow:hidden;
 }
 #sidebar ul ul li {
 	float:left;
@@ -104,7 +104,7 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 	}
 	
 	#sidebar ul ul {
-		overflow:auto;
+		overflow:hidden;
 	}
 	#sidebar ul ul li {
 		clear:both;

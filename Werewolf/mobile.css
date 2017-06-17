@@ -1,7 +1,6 @@
 BODY,TD,input,div,form,TEXTAREA,center,option,pre,blockquote {font-size:9pt; color:#666666; font-family:±¼¸²;}
 TD {line-height:140%}
-body 
-{
+body {
 	background-color:#000000;
 	/* no more support for scrollbar style
 	scrollbar-face-color:#000000;
@@ -34,6 +33,7 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 	border-right:1px solid #151515;
 	float:right;
 }
+
 #submenu {
 	border:1px solid #151515;
 }
