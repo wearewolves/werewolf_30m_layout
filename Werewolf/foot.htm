@@ -1,36 +1,34 @@
-		</div>
 	</div>
 
 	<div id="sidebar">
-	<?if($member[no]==1 or ($member[no]==1488 and 0)){?>
-		<img src="http://werewolf.co.kr/Werewolf/ddd.png">
-	<?}?>
+		<?if($member[no]==1 or ($member[no]==1488 and 0)){?>
+			<img src="http://werewolf.co.kr/Werewolf/ddd.png">
+		<?}?>
 
-	<?if($member[level]==8){?>
-		<div class="nomanner">현재 비매너 처리 중입니다<br />
-			<a href="http://werewolf.co.kr/bbs/zboard.php?id=attendWerewolf">출석부</a>에 도장을 찍어주세요.
-		</div>
-	<?}?>
+		<?if($member[level]==8){?>
+			<div class="nomanner">현재 비매너 처리 중입니다<br />
+				<a href="http://werewolf.co.kr/bbs/zboard.php?id=attendWerewolf">출석부</a>에 도장을 찍어주세요.
+			</div>
+		<?}?>
+		
 		<ul>
 			<li class="outter"><a title="인간의 탈을 쓴 늑대">인랑</a></li>
-					<ul class="inner">
-						<li><a href="http://werewolf6.cafe24.com/bbs/zboard.php?id=werewolf"><strong>참여하기</strong></a></li>				
-						<li><a href="http://ko.werewolf.wikia.com" target="blank">룰과 매뉴얼</a></li>
-						<li><a href="http://werewolf6.cafe24.com/bbs/skin/werewolf/view_role-playing.php?id=werewolf&set=1">롤 플레잉 세트</a></li>
-						<!--<li><a href="http://werewolf6.cafe24.com/bbs/zboard.php?id=attendWerewolf">출석부</a></li>-->
-						<li><a href="http://werewolf6.cafe24.com/bbs/skin/werewolf/view_private_record.php?id=werewolf">개인 기록</a></li>
-
-<!--						<li><a href="#" onMousedown="window.open('http://werewolf.co.kr/bbs/view_info.php?member_no=1','view_info','width=400,height=510,toolbar=no,scrollbars=yes')">운영자에게 쪽지</a></li>-->
-						
-					</ul>
+			<ul class="inner">
+				<li><a href="http://werewolf6.cafe24.com/bbs/zboard.php?id=werewolf"><strong>참여하기</strong></a></li>				
+				<li><a href="http://ko.werewolf.wikia.com" target="blank">룰과 매뉴얼</a></li>
+				<li><a href="http://werewolf6.cafe24.com/bbs/skin/werewolf/view_role-playing.php?id=werewolf&set=1">롤 플레잉 세트</a></li>
+				<!--<li><a href="http://werewolf6.cafe24.com/bbs/zboard.php?id=attendWerewolf">출석부</a></li>-->
+				<li><a href="http://werewolf6.cafe24.com/bbs/skin/werewolf/view_private_record.php?id=werewolf">개인 기록</a></li>
+				<!--<li><a href="#" onMousedown="window.open('http://werewolf.co.kr/bbs/view_info.php?member_no=1','view_info','width=400,height=510,toolbar=no,scrollbars=yes')">운영자에게 쪽지</a></li>-->
 			</ul>
+		</ul>
 
 		<ul>
 			<li class="outter">전당</li>
-					<ul class="inner">
-						<li><a href="http://werewolf6.cafe24.com/bbs/skin/werewolf/view_best_village.php?id=werewolf">Best 마을</a></li>
-						<li><a href="http://werewolf6.cafe24.com/bbs/skin/werewolf/view_members_record.php?id=werewolf">수다의 전당</a></li>
-					</ul>
+			<ul class="inner">
+				<li><a href="http://werewolf6.cafe24.com/bbs/skin/werewolf/view_best_village.php?id=werewolf">Best 마을</a></li>
+				<li><a href="http://werewolf6.cafe24.com/bbs/skin/werewolf/view_members_record.php?id=werewolf">수다의 전당</a></li>
+			</ul>
 		</ul>
 
 <!--"http://werewolf.co.kr/bbs/zboard.php?id=wolfManual"
@@ -67,28 +65,27 @@
 -->
 		<ul>
 			<li class="outter">30분 서버</li>
-					<ul class="inner">
-						<li><a href="http://werewolf.co.kr">1日 서버</a></li>				
-						<li><a href="http://werewolf6.cafe24.com">30분 서버</a></li>				
-					</ul>
+			<ul class="inner">
+				<li><a href="http://werewolf.co.kr">1日 서버</a></li>				
+				<li><a href="http://werewolf6.cafe24.com">30분 서버</a></li>				
+			</ul>
 		</ul>
 
-
-<?if(1 <= $member[level] and $member[level]<=6 and 1){?>
-		<ul>
-			<li class="outter">관리용</li>
-					<ul class="inner">
-						<li><a href="http://mrtg.hosting.cafe24.com/uml/uml-009_vconn5.html" target="_blank">전송량 모니터링</a></li>
-						<li><a href="http://werewolf.co.kr/bbs/skin/werewolf/view_members_recordddd.php?id=werewolf">전체 기록</a></li>
-						<li><a href="http://whois.nic.or.kr/result.php" target="_blank">IP 주소 추적</a></li>						
-						<li><a href="http://werewolf.co.kr/bbs/log/ipClash.txt" target="_blank">IP 충돌 체크</a></li>						
-						<li><a href="http://werewolf.co.kr/bbs/log/loginCheck.txt" target="_blank">로그인 체크</a></li>						
-						<li><a href="http://werewolf.co.kr/bbs/skin/werewolf/view_no_manner_player.php?id=werewolf">비매너 플레이어</a></li>
-						<li><a href="http://werewolf.co.kr/bbs/skin/werewolf/view_ip_overlap.php?id=werewolf">IP 중복 체크</a></li>
-					</ul>
-		</ul>
-
-<?}?>
+		<?if(1 <= $member[level] and $member[level]<=6 and 1){?>
+			<ul>
+				<li class="outter">관리용</li>
+				<ul class="inner">
+					<li><a href="http://mrtg.hosting.cafe24.com/uml/uml-009_vconn5.html" target="_blank">전송량 모니터링</a></li>
+					<li><a href="http://werewolf.co.kr/bbs/skin/werewolf/view_members_recordddd.php?id=werewolf">전체 기록</a></li>
+					<li><a href="http://whois.nic.or.kr/result.php" target="_blank">IP 주소 추적</a></li>						
+					<li><a href="http://werewolf.co.kr/bbs/log/ipClash.txt" target="_blank">IP 충돌 체크</a></li>						
+					<li><a href="http://werewolf.co.kr/bbs/log/loginCheck.txt" target="_blank">로그인 체크</a></li>						
+					<li><a href="http://werewolf.co.kr/bbs/skin/werewolf/view_no_manner_player.php?id=werewolf">비매너 플레이어</a></li>
+					<li><a href="http://werewolf.co.kr/bbs/skin/werewolf/view_ip_overlap.php?id=werewolf">IP 중복 체크</a></li>
+				</ul>
+			</ul>
+		<?}?>
+		
 		<!--
 		<div id="submenu">
 				<span id="print"><a href="javascript:window.print()">print</a></span> &nbsp;
@@ -96,8 +93,7 @@
 		</div>
 		-->
 
-
-</div>
+	</div>
 </div>
 
 <!-- new 로그분석코드 시작 -->
