@@ -88,8 +88,9 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 	background-color:#333;
 }
 
-@media all and (min-width:768px) 
-{
+/*
+@media all and (min-width:768px) {
+*/
 	#container {
 		width:846px;
 	}
@@ -115,6 +116,14 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 		line-height:1em;
 		background-color:#111;
 	}
+/*
+}
+*/
+
+@media print {
+	#header {display:none;}
+	#sidebar {display:none;}
+	#content {font-size:5pt;}
 }
 
 /* notification message style */

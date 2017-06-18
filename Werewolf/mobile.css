@@ -60,7 +60,12 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 	background:#111111;
 	border:solid 1px #151515;
 }
-
 #sidebar ul ul{
 	border:solid 1px #111111;
+}
+
+@media print {
+	#header {display:none;}
+	#sidebar {display:none;}
+	#content {font-size:5pt;}
 }
