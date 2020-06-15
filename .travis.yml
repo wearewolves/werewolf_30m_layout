@@ -16,3 +16,4 @@ deploy:
   script: gulp deploy --user $FTP_USER --password $FTP_PASSWORD
   on:
     tags: false
+
