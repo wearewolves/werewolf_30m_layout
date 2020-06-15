@@ -12,7 +12,6 @@ gulp.task('deploy', function() {
     log: gutil.log,
     maxConnections: 4
   });
-  console.log(args.password)
   gulp.src(['README.md'])
     .pipe(conn.newer(remotePath))
     .pipe(conn.dest(remotePath));
