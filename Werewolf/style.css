@@ -22,7 +22,9 @@ A:active  {color:#ff6666; text-decoration:none; font-family:±¼¸²; font-size:9pt;
 A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 
 #container {
+	/*
 	width:846px;
+	*/
 	margin:0px auto;
 }
 
@@ -32,14 +34,18 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 #sidebar {
 	margin:20px 0px;
 	text-align:left;
+	/*
 	width:190px;
 	float:left;
+	*/
 }
 #content {
 	border-left:1px solid #151515;
 	border-right:1px solid #151515;
+	/*
 	float:right;
 	width:645px;
+	*/
 }
 
 #submenu {
@@ -76,7 +82,7 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 	margin:0px 0px 0px 0px;
 	padding:10px 0px 0px 0px;
 	border:solid 1px #111111;
-	overflow:hidden;
+	overflow:auto;
 }
 #sidebar ul ul li {
 	float:left;
@@ -88,9 +94,9 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 	background-color:#333;
 }
 
-/*
+/* */
 @media all and (min-width:768px) {
-*/
+
 	#container {
 		width:846px;
 	}
@@ -116,9 +122,8 @@ A:hover  {color:#666666; text-decoration:none; font-family:±¼¸²; font-size:9pt;}
 		line-height:1em;
 		background-color:#111;
 	}
-/*
 }
-*/
+/* */
 
 @media print {
 	#header {display:none;}
