@@ -5,10 +5,9 @@ env:
   global:
   - secure: RQ7wYKjKpqjQm/9jT/uvRCJnAPOgNenc7TjOovp7iEyAHvwcMoE6MpoYZxZZ/iCxcxmkr4muedv/9gI9eGgefomg5lCO53AoDjHl1YrC08LFY7+CR6T8NDzjGS3T++VvYUWaJsZvBywPVHg/E7NeFNVtIRIKoh6TjAGYKN48qOv9ZvWRVWzaMGvdUcZc7FjR/B9bTjMaY149cbGwPs6h2Ai3+Ik+A34rJhm5hMA3QV0K5vKM7FBwIxu1zwMFrZTz9eL1pprvKJQBKOu5RDAb5zFVEe7ablDkuwRBrteA21BzgqQfeb7NZWrItM7akF89EU8vtP1L47aNwXENZIQLgpgfaR7LJ/E4DgNDwjLHq2w09iwQJUmej6e8s//vVa5j+6dNdUZ0OKFmY3xPmrP1ujGmrTdS/DyVRlflg+zHrWB608myBsfQgjFxpVteKNora3GzfLUJFrxB+YZUrhQGT+tcLSLboToW+k8zrn2kKHvLni57YDaeq+Kyy8ocmEM1H5p1x8E7c1+HSBRrI91jiEbAaKBOC1ZQ44L8UdwW+neO5sWCKDC6WyVnIV+rVgq03n30JcXvqvDoYwV6zfL9RDjcV0+Iz+uouZuGg5Y6nAOOwFN8o1ZtCx298lsRCTesyvgKnSZrpYK41lQobJymUuoWZaSiLpX0Hlvodb2MRVQ=
   - secure: Ew4rPCnP8afce+3HZ0111Bvd9aXUzY5h/uIr/O6hvPAzLZA7LE6dw7lus4jgeTs1AuBKp5j+46uJIEfqgs7oFkvZKHImRUKtHuw1d33u/VRWl2abW14lebsGnfP+6X/VeYRv22Ve4qLnWO14WGE1gq9TmXIlGDEysP67gOtQg/faq0pwjhLofcmQSNDWITyMM00U8xSDg1oKSq4qTpq1zrbwWE19qu9IWPCojSon+2GNDNEXfc6NdBiMA2AIIuopHJ6xAiJGD8mfEpUD44+I9+yuuvrICddUGEs+ORja8gGKxMi2uV8QXiR8dEkCq1AFGksU0COIPLw1jHsvMaO7IYUbOjQTDwk0dJYgDakG4FwS1DCNvSR6wKUMDapwDP1xhgRU4ID03qrXNLzLY9XidrMkn3RrUX3T6xWCW/5m1FaT51NE6a+0cDcIoKa3ebsrWF2cAkZlWiaGJef3evbK4CZKZLPll1rtLhwXE9SYXj2+LewcjTNPDbTk9eGFJSPvFu7R7C7XE5UontIoxAon0EjFeI8SJ5tPEIAzB/VZLkUCNHaJAGuU7KC0azQEk88zJfGIc1jmfdLmLtsJeQgJQzX4gAVnfQ96pEg9A58tRw7D16qu+tNsfNCgnEANxAMFiFgp8Sn8LXfABNFvg8bXp//MkazgdkPUf+WGzHAwAv8=
-after_success:
-  "find Werewolf -type f -exec curl --ftp-create-dirs -T {} ftp://werewolf6.cafe24.com/{} --user $FTP_USER:$FTP_PASSWORD"
-  on:
-    tags: false
+deploy:
+  provider: script	  
+  script: curl -T README.md -u $FTP_USER:$FTP_PASSWORD ftp://werewolf6.cafe24.com/
 before_deploy:
 - npm install gulp
 - npm install gulp -g
