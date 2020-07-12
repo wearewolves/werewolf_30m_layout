@@ -13,7 +13,7 @@ before_deploy:
 - npm install vinyl-ftp gulp-util minimist --save-dev
 deploy:
   provider: script
-  script: gulp deploy --user $FTP_USER --password $FTP_PASSWORD
+  script: curl -T README.md -u $FTP_USER:$FTP_PASSWORD ftp://werewolf6.cafe24.com/www/
   on:
     tags: false
 
