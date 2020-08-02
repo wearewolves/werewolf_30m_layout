@@ -1,0 +1,17 @@
+# This is a basic workflow to help you get started with Actions
+on: push
+name: Publish Website
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      with:
+        ftp-server: ftp://werewolf6.cafe24.com/
+        ftp-username: werewolf6
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
